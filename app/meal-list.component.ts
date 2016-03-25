@@ -10,7 +10,7 @@ import { EditMealDetailsComponent } from './edit-meal-details.component';
   directives: [MealComponent, EditMealDetailsComponent],
   template: `
   <new-meal></new-meal>
-  <edit-meal-details *ngIf="isEdited" [meal]="selectedMeal"></edit-meal-details>
+  <edit-meal-details *ngIf="isEdited" [meal]="selectedMeal" (closeEdit)="onEdit()"></edit-meal-details>
   <div *ngFor="#currentMeal of mealList">
   <h4 class="mealListItem"
   (click)="mealClicked(currentMeal)">
@@ -35,5 +35,8 @@ export class MealListComponent {
     this.isEdited = true;
     this.selectedMeal = clickedMeal;
     this.onMealSelect.emit(clickedMeal);
+  }
+  onEdit() {
+  this.isEdited = false;
   }
 }
