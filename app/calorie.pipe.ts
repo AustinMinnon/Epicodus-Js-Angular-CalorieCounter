@@ -9,7 +9,7 @@ import {Meal} from './meal.model';
 export class CaloriePipe implements PipeTransform {
   transform(input: Meal[], args) {
     var desiredCalorie = parseInt(args[0]);
-    if(desiredCalorie > 300) {
+    if(desiredCalorie >= 300) {
       return input.filter((meal) => {
         return meal.calories > 300;
       });
