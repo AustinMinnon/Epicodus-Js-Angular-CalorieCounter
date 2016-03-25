@@ -9,7 +9,7 @@ import { EditMealDetailsComponent } from './edit-meal-details.component';
   template: `
   <p>Comments: {{ meal.description}} </p>
   <p>Calories: {{ meal.calories}} </p>
-  <edit-food [food] = food></edit-food>
+  <edit-meal-details *ngIf="isEdited" [meal]="selectedMeal" (closeEdit)="onEdit()"></edit-meal-details>
   `
 })
 
