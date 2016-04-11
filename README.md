@@ -1,28 +1,41 @@
-# _Calorie Counter App_
+# Calorie Counter
 
-#### _Log your daily intake of calories, March 25, 2016_
+Allows a user to log each meal and see daily calorie intake, hoping to help people eat healthier.
 
-#### By _**Austin Minnon**_
+### By _**Austin Minnon**_
 
-## Description
+## Prerequisites
 
-_Input a food name, a description, and how many calories it contains. Listings will be placed into a calorie log._
+You will need the following things properly installed on your computer.
 
-## Setup/Installation Requirements
+* [Git](http://git-scm.com/)
+* [Node.js](http://nodejs.org/) (with NPM)
+* [Bower](http://bower.io/)
+* [Ember CLI](http://www.ember-cli.com/)
+* [PhantomJS](http://phantomjs.org/)
 
-* _Clone this repository._
-* _Run the following commands in terminal:_
-  * _npm install_
-  * _bower install_
-  * _gulp build_
-  * _gulp serve_
+## Setup & Installation
+
+* `git clone <repository-url>` this repository
+* change into the new directory
+* `npm install`
+* `bower install`
+* `ember i emberfire`
+* `ember i ember-bootstrap`
+* `ember build`
+* `ember s`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ## Bugs
- No known bugs.
+ No known bugs
 
 ## Technologies Used
 
-_Javascript, Angular, Node, Bower, Gulp, SASS, Bootstrap_
+_Javascript, Ember, EmberFire, Node, Bower, Bootstrap_
+
+##GitHub Pages
+http://austinminnon.github.io/Epicodus-Js-Angular-CalorieCounter
+
 
 ### License
 
